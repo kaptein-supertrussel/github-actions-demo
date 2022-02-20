@@ -1,3 +1,10 @@
+# Docs
+https://docs.github.com/en/actions
+
+# References
+https://github.com/juliankrispel/jest-puppeteer-github-action-tests
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
