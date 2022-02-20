@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import kaptein from './kaptein-supertrussel.png';
 import './App.css';
 
