@@ -1,4 +1,3 @@
-import React from 'react';
 import kaptein from './kaptein-supertrussel.png';
 import './App.css';
 
