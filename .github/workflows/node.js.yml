@@ -31,9 +31,11 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - name: Publish generated content to GitHub Pages
-      uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+    - name: Deploy to GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v2
       with:
-        dir: dist
-        branch: gh-pages
-        token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}    
+        target_branch: gh-pages
+        build_dir: public
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
