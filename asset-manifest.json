@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github-actions-demo/static/css/main.5f23dfd3.css",
+    "main.js": "/github-actions-demo/static/js/main.2e77bf7b.js",
+    "static/js/787.a3103ff7.chunk.js": "/github-actions-demo/static/js/787.a3103ff7.chunk.js",
+    "static/media/kaptein-supertrussel.png": "/github-actions-demo/static/media/kaptein-supertrussel.43463ad2ac43a0fc61df.png",
+    "index.html": "/github-actions-demo/index.html",
+    "main.5f23dfd3.css.map": "/github-actions-demo/static/css/main.5f23dfd3.css.map",
+    "main.2e77bf7b.js.map": "/github-actions-demo/static/js/main.2e77bf7b.js.map",
+    "787.a3103ff7.chunk.js.map": "/github-actions-demo/static/js/787.a3103ff7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f23dfd3.css",
+    "static/js/main.2e77bf7b.js"
+  ]
+}
