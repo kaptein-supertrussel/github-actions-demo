@@ -33,8 +33,7 @@ jobs:
 
     - name: Gen dummy page
       run: |
-        mkdir public
-        cat > public/index.html <<EOL
+        cat > public/index2.html <<EOL
         <!doctype html>
         <html>
           <head>
