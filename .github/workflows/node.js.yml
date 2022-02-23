@@ -16,7 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
+        # [12.x, 14.x, 16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -34,5 +35,5 @@ jobs:
       uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
       with:
         dir: dist
-        branch: main
+        branch: gh-pages
         token: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}    
