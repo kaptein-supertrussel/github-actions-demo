@@ -31,25 +31,11 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - name: Gen dummy page
-      run: |
-        cat > public/index2.html <<EOL
-        <!doctype html>
-        <html>
-          <head>
-            <title>GitHub Pages deployed!!</title>
-          </head>
-          <body>
-            <p>GitHub Pages with <strong>${{ github.sha }}</strong> commit ID has been deployed through <a href="https://github.com/marketplace/actions/github-pages">GitHub Pages action</a> successfully.</p>
-          </body>
-        </html>
-        EOL
-
     - name: Deploy to GitHub Pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
-        build_dir: public
+        build_dir: build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
